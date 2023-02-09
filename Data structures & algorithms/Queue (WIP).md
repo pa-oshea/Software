@@ -49,8 +49,6 @@ func (q *Queue[T]) Peek() T {
 ```
 
 ### Typescript
-```
-```
 ```ts
 type node<T> = {
     value: T;
