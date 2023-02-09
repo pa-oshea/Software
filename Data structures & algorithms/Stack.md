@@ -6,7 +6,7 @@ You can think of the stack data structure as the pile of plates on top of anothe
 
 Here, you can:
 - Put a new plate on top
-- Remove the top platea
+- Remove the top plate
 
 And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.
 
