@@ -29,8 +29,8 @@ There are some basic operations that allow us to perform different actions on a 
 #### Go
 ```go
 type Node[T any] struct {
-	Data       T
-	Next, Prev *Node[T]
+	Data T
+	Next *Node[T]
 }
 
 type stack[T any] struct {
@@ -71,9 +71,9 @@ type node<T> = {
     value: T;
     next?: node<T>;
 };
+
 export default class Stack<T> {
     public length: number;
-
     public head?: node<T>;
 
     constructor() {
