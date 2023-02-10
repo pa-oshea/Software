@@ -8,7 +8,7 @@ A service is an abstract concept implemented on platforms by running the same co
 In this specification, a network is a platform capability abstraction to establish an IP route between containers withing services connected together. Low-level, platform-specific networking options are grouped into the network definition and **may** be partially implemented on some platforms.
 
 #### [Volumes](https://docs.docker.com/compose/compose-file/#volumes-top-level-element)
-Services store and share persistent data into volumes. The specification describes such a persistent data as a high-level filesystem mount with global options. Actual platform-specific implementation details are grouped into the volumes definition and **may** be partially implemented on some platforms.
+Services store and share persistent data into volumes. The specification describes such a persistent data as a high-level file system mount with global options. Actual platform-specific implementation details are grouped into the volumes definition and **may** be partially implemented on some platforms.
 
 ### Example
 ```yaml
