@@ -19,3 +19,16 @@ When looking at requests, we can check on the _Status Code_ of the request to ge
 - **3XX**: Redirection messages. These are typically invisible because the browser or HTTP client will automatically do the redirect.
 - **4XX**: Client errors. 
 - **5XX**: Server errors.
+
+## HTTPS
+Hypertext Transfer Protocol _Secure_ or [HTTPS](https://developer.mozilla.org/en-US/docs/Glossary/https) is an extension of the HTTP protocol. HTTPS secures the data transfer between client and server by [encrypting](https://developer.mozilla.org/en-US/docs/Glossary/Encryption) all of the communication. HTTPS allows a client to safely share sensitive information with the server through an HTTP request, such as credit card information, passwords, or bank account numbers.
+
+### Security and encryption
+HTTPS requires that the client use [SSL](https://developer.mozilla.org/en-US/docs/Glossary/SSL) or [TLS](https://developer.mozilla.org/en-US/docs/Glossary/TLS) to protect requests and traffic by encrypting the information in the request. HTTPS is just HTTP with extra security!
+
+#### HTTPS keeps your messages private, but not your identity
+It's important to note that while HTTPS encrypts _what you are saying_, it doesn't necessarily protect _who you are_. Tools like [VPNs](https://nordvpn.com/what-is-a-vpn/) are needed for remaining anonymous online.
+
+#### HTTPS ensures that you're talking to the right person (or server)
+
+In addition to encrypting the information within a request, HTTPS uses [digital signatures](https://en.wikipedia.org/wiki/Digital_signature) to prove that you're communicating with the server that you think you are. If a hacker were to intercept an HTTPS request by tapping into a network cable, they wouldn't be able to successfully pretend they are your bank's web server.
