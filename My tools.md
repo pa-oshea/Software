@@ -20,4 +20,4 @@ bat
 yay
 fzf
 zoxide
-
+mermaid - for diagrams in obsidian
