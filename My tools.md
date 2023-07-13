@@ -21,3 +21,5 @@ yay
 fzf
 zoxide
 mermaid - for diagrams in obsidian
+depcheck
+npm-check-updates
