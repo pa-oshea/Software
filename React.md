@@ -1,6 +1,19 @@
 ### useEffect
 Only use when synchronizing with an non-react external source. E.g: API call. database
 
+example of not using effects to set data
+```javascript
+  let [entityNameId, setEntityNameId] = useState(null);
+  let [inputValue, setInputValue] = useState("");
+  let [multiItemValues, setMultiItemValues] = useState([]);
+
+  let entityNames = useMemo(() => mapEntityNames(configData), [configData]);
+
+  let entityNameValue = entityNameId || entityNames[0]?.value;
+
+  let tableData = useMemo(() => getTokensTableData(entityNameValue, configData), [entityNameValue, configData]);
+```
+
 ### useState
 
 Updater function, if you do multiple updates within the same event, updaters can be helpful. They’re also helpful if accessing the state variable itself is inconvenient . 
