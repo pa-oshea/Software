@@ -71,3 +71,7 @@ function identity<T>(arg: T): T {
 
 let output = identity<string>('Hello, world!');
 ```
+
+### Misc.
+#### declare
+declare is used to tell typescript that a value does exist. When using a library declare can be used when getting type errors from that library to ensure that the value does exist. 
